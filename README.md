@@ -1,180 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CNAPP Dashboard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
+# CNAPP Dashboard
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+This project is a dynamic dashboard application built with **React**, **Redux Toolkit**, and **Tailwind CSS**. It allows users to visualize and manage widgets within different categories.
 
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+## Check Live Demo
 
-    h2 {
-      color: #a900ff;
-    }
+You can check the live version of the project here:  
+[**CNAPP Dashboard**](https://cnapp-dashboard1.netlify.app/)
 
-    p,
-    ul {
-      line-height: 1.6;
-      color: #555;
-    }
+---
 
-    .features ul,
-    .technologies ul,
-    .setup-instructions ol,
-    .usage ol {
-      padding-left: 20px;
-    }
+## Features
 
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
+- **Dynamic Widget Display:** Displays widgets organized by categories.
+- **Add New Widgets:** Users can add new widgets to specific categories.
+- **Widget Filtering:** Search and filter widgets by name.
+- **Delete Widgets:** Remove unwanted widgets from categories.
+- **Modal Interactions:** Utilizes modals for adding widgets and confirming deletions.
+- **Responsive Design:** Adapts to different screen sizes for optimal viewing.
 
-    .badge {
-      padding: 5px 10px;
-      background-color: #2e2e2e;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 14px;
-      display: inline-block;
-    }
+---
 
-    .link {
-      text-decoration: none;
-      color: #a900ff;
-    }
+## Technologies Used
 
-    .section {
-      margin-bottom: 40px;
-    }
+[![React](https://img.shields.io/badge/React-a900ff?logo=react&logoColor=61dafb&labelColor=2e2e2e)](https://reactjs.org/)  
+[![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-a900ff?logo=redux&labelColor=2e2e2e)](https://redux-toolkit.js.org/)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-a900ff?logo=tailwind-css&labelColor=2e2e2e)](https://tailwindcss.com/)  
+[![React Icons](https://img.shields.io/badge/React%20Icons-a900ff?logo=react&logoColor=61dafb&labelColor=2e2e2e)](https://react-icons.github.io/react-icons/)  
+[![Chart.js](https://img.shields.io/badge/Chart.js-a900ff?logo=chart.js&labelColor=2e2e2e)](https://www.chartjs.org/)  
+[![React Chartjs 2](https://img.shields.io/badge/React%20Chartjs%202-a900ff?logo=react&logoColor=61dafb&labelColor=2e2e2e)](https://react-chartjs-2.js.org/)
 
-    .align-center {
-      text-align: center;
-    }
+- **React:** JavaScript library for building user interfaces.
+- **Redux Toolkit:** State management library for predictable state updates.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **React Icons:** Library for easily incorporating popular icons.
+- **Chart.js:** Library for building charts and graphs.
+- **React Chartjs-2:** Library for creating components for Chart.js.
 
-    .code-block {
-      background-color: #f1f1f1;
-      padding: 10px;
-      border-radius: 5px;
-      font-family: monospace;
-    }
-  </style>
-</head>
+---
 
-<body>
-  <div class="container">
-    <h1>CNAPP Dashboard</h1>
+## Setup Instructions
 
-    <div class="section">
-      <p class="align-center">
-        You can check the live version of the project here: <a class="link" href="https://cnapp-dashboard1.netlify.app/"
-          target="_blank">CNAPP Dashboard</a>
-      </p>
-    </div>
+1. **Clone the repository:**
 
-    <div class="section features">
-      <h2>Features</h2>
-      <ul>
-        <li><strong>Dynamic Widget Display:</strong> Displays widgets organized by categories.</li>
-        <li><strong>Add New Widgets:</strong> Users can add new widgets to specific categories.</li>
-        <li><strong>Widget Filtering:</strong> Search and filter widgets by name.</li>
-        <li><strong>Delete Widgets:</strong> Remove unwanted widgets from categories.</li>
-        <li><strong>Modal Interactions:</strong> Utilizes modals for adding widgets and confirming deletions.</li>
-        <li><strong>Responsive Design:</strong> Adapts to different screen sizes for optimal viewing.</li>
-      </ul>
-    </div>
+   ```bash
+   git clone https://github.com/rd273001/CNAPP-Dashboard.git
+   cd CNAPP-Dashboard
+   ```
 
-    <div class="section technologies">
-      <h2>Technologies Used</h2>
-      <div class="badges">
-        <span class="badge">React</span>
-        <span class="badge">Redux Toolkit</span>
-        <span class="badge">Tailwind CSS</span>
-        <span class="badge">React Icons</span>
-        <span class="badge">Chart.js</span>
-        <span class="badge">React Chartjs-2</span>
-      </div>
-    </div>
+2. **Install dependencies:**
 
-    <div class="section setup-instructions">
-      <h2>Setup Instructions</h2>
-      <ol>
-        <li>
-          <p><strong>Clone the repository:</strong></p>
-          <pre class="code-block">git clone https://github.com/rd273001/CNAPP-Dashboard.git
-cd CNAPP-Dashboard</pre>
-        </li>
-        <li>
-          <p><strong>Install dependencies:</strong></p>
-          <pre class="code-block">npm install
-# OR
-yarn</pre>
-        </li>
-        <li>
-          <p><strong>Start the application:</strong></p>
-          <pre class="code-block">npm run dev
-# OR
-yarn dev</pre>
-        </li>
-      </ol>
-      <p>This will start the development server and make the application available at <a class="link"
-          href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your default web browser.</p>
-    </div>
+   Using npm:
 
-    <div class="section usage">
-      <h2>Usage</h2>
-      <ol>
-        <li><strong>Adding Widgets:</strong>
-          <p>Click the "Add Widget" button on a category card or the "Add Widget" button in the header. Fill in the widget
-            details in the modal and click "Add Widget".</p>
-        </li>
-        <li><strong>Filtering Widgets:</strong>
-          <p>Use the search bar in the header to filter widgets by name.</p>
-        </li>
-        <li><strong>Deleting Widgets:</strong>
-          <p>Click the "Delete" button on a widget card. Confirm the deletion in the modal.</p>
-        </li>
-      </ol>
-    </div>
+   ```bash
+   npm install
+   ```
 
-    <div class="section future-enhancements">
-      <h2>Future Enhancements</h2>
-      <ul>
-        <li><strong>Widget Customization:</strong> Allow users to customize widget appearance and data displayed.</li>
-        <li><strong>Data Persistence:</strong> Implement data storage to save dashboard configurations.</li>
-        <li><strong>User Authentication:</strong> Add user accounts and role-based access control.</li>
-        <li><strong>More Widget Types:</strong> Introduce a wider variety of widgets for different data visualizations.</li>
-      </ul>
-    </div>
+   OR using yarn:
 
-    <div class="section contribution">
-      <h2>Contribution</h2>
-      <p>Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or
-        improvements.</p>
-    </div>
-  </div>
-</body>
+   ```bash
+   yarn
+   ```
 
-</html>
+3. **Start the application:**
+
+   Using npm:
+
+   ```bash
+   npm run dev
+   ```
+
+   OR using yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+   This will start the development server and make the application available at <http://localhost:3000> in your default web browser.
+
+---
+
+## Usage
+
+### 1. Adding Widgets:
+
+- Click the **"Add Widget"** button on a category card or the **"Add Widget"** button in the header.
+- Fill in the widget details in the modal and click **"Add Widget"**.
+
+### 2. Filtering Widgets:
+
+- Use the search bar in the header to filter widgets by name.
+
+### 3. Deleting Widgets:
+
+- Click the **"Delete"** button on a widget card.
+- Confirm the deletion in the modal.
+
+---
+
+## Future Enhancements
+
+- **Widget Customization:** Allow users to customize widget appearance and data displayed.
+- **Data Persistence:** Implement data storage to save dashboard configurations.
+- **User Authentication:** Add user accounts and role-based access control.
+- **More Widget Types:** Introduce a wider variety of widgets for different data visualizations.
+
+---
+
+## Contribution
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or improvements.
+
+---
+
+### Notes on Alignment
+
+1. **Headings (`#` to `#####`):** These provide structure to the document. Higher-level headings like `#` are used for the title, and smaller headings like `###` are for subsections.
+2. **Lists (`-` or `1.`):** Used to organize items, either unordered (bullets) or ordered (numbered).
+3. **Code blocks:** Use triple backticks (```) for block-style code snippets to make commands stand out.
+4. **Links and Badges:** External links and badges are displayed with inline text for clarity.
+
+This Markdown structure ensures that your README file is easy to read, visually appealing, and properly aligned.
